@@ -31,8 +31,22 @@
     .min-size{
       height: auto;
     }
+    .min-height{
+      height: 220px;
+    }
     .font-size-16{
       font-size:16px !important;
+    }
+    .w-60{
+      width: 60% !important;
+    }
+    .svg {
+      display: block;
+    }
+    @media (max-width: 850px) {
+      .svg {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -43,7 +57,9 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo-blue.png" alt=""></a>
+      <a href="index.html" class="logo me-auto">
+        <img class="w-60" src="assets/img/logo-blue.png" alt="">
+      </a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -61,16 +77,18 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center pb-0">
 
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
-        <div class="col-xl-6">
-          <h1>SOMOS ESPECIALISTAS, mais que entendedores do mercado, nós o vivemos. </h1>
-          <h2>Aprenda de forma SIMPLES e PERSONALIZADA como organizar, planejar e conduzir seus negócios de forma muito mais LUCRATIVA para potencializar seus lucros exponencialmente.<br>
-
-            Agende uma conversa com um de nossos especialistas gratuitamente, e veja na prática como podemos melhorar seus resultados. </h2>
-          <a href="#about" class="btn-get-started scrollto">Fale conosco</a>
+        <div class="col-lg-8 col-md-12">
+          <h1 class="mb-3">SOMOS ESPECIALISTAS, mais que entendedores do mercado, nós o vivemos. </h1>
+          <h4 style="text-align: justify;">Aprenda de forma SIMPLES e PERSONALIZADA como organizar, planejar e conduzir seus negócios de forma muito mais LUCRATIVA para potencializar seus lucros exponencialmente.<br>
+            Agende uma conversa com um de nossos especialistas gratuitamente, e veja na prática como podemos melhorar seus resultados. </h4>
+          <a href="#contact" class="btn-get-started scrollto mt-3">Fale conosco</a>
+        </div>
+        <div class="col-lg-4 col-md-0 d-flex align-items-center">
+          <img width="105%" class="svg" src="assets/img/pie_graph_re_fvol.svg" alt="">
         </div>
       </div>
     </div>
@@ -149,7 +167,7 @@
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
@@ -246,11 +264,10 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <h2>Depoimentos</h2>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -258,13 +275,13 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
+                <div class="testimonial-item min-height">
                   <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                   <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
+                  <h4>Ceo &amp; Fundador</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    A equipe Capitalize é profissional, eficiente e extremamente útil. Todos eles são muito proficientes em CRM e ajudaram a orientar nossa empresa no último ano.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -273,13 +290,13 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
+                <div class="testimonial-item min-height">
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    Trabalho com a Capitalize há quatro anos e não consigo dizer coisas boas o suficiente sobre a experiência.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -288,13 +305,13 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
+                <div class="testimonial-item min-height">
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                   <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
+                  <h4>Dono de loja</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    Achei a equipe experiente e profissional e a considerarei para futuros projetos.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -303,13 +320,13 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
+                <div class="testimonial-item min-height">
                   <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    Eles foram excelentes na criação de soluções personalizadas para garantir que o razão geral atendesse a todas as necessidades de nossa empresa.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -318,13 +335,13 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
+                <div class="testimonial-item min-height">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                   <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
+                  <h4>Empreendedor</h4>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat esse veniam culpa fore nisi cillum quid.
+                    Grande contribuição foi feita pela equipe Capitalize para o nosso projeto. E realmente sem o seu esforço, a meta não teria sido alcançada a tempo.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -336,7 +353,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- End Testimonials Section -->
 
     <!-- ======= Pricing Section ======= -->
@@ -408,12 +425,11 @@
     <!-- End Pricing Section -->
 
     <!-- ======= Team Section ======= -->
-    <!-- <section id="team" class="team section-bg">
+    <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Time</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <h2>Equipe Capitalize</h2>
         </div>
 
         <div class="row">
@@ -421,17 +437,15 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Amanda Jepson</h4>
+                <span>CTO</span>
               </div>
             </div>
           </div>
@@ -439,17 +453,15 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Walter White</h4>
+                <span>Gestor administrativo</span>
               </div>
             </div>
           </div>
@@ -457,17 +469,15 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Sarah Jhonson</h4>
+                <span>Contadora</span>
               </div>
             </div>
           </div>
@@ -475,17 +485,15 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>William Anderson</h4>
+                <span>Publicitário</span>
               </div>
             </div>
           </div>
@@ -493,7 +501,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -505,59 +513,65 @@
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-6">
-
-            <div class="row">
-              <!-- <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div> -->
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Nossos e-mails</h3>
-                  <p>info@capitalize.com<br>contact@capitalize.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Telefones</h3>
-                  <p>+55 85 3341-0001</p>
-                  <p>+55 85 3341-0002</p>
+          <div class="col-lg-12">
+            <div class="row justify-content-center mb-4">
+              <div class="col-lg-6">
+                <div class="row">
+                  <!-- <div class="col-md-12">
+                    <div class="info-box">
+                      <i class="bx bx-map"></i>
+                      <h3>Our Address</h3>
+                      <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                  </div> -->
+                  <div class="col-md-6">
+                    <div class="info-box mt-4">
+                      <i class="bx bx-envelope"></i>
+                      <h3>Nossos e-mails</h3>
+                      <p>info@capitalize.com<br>contact@capitalize.com</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="info-box mt-4">
+                      <i class="bx bx-phone-call"></i>
+                      <h3>Telefones</h3>
+                      <p>+55 85 3341-0001</p>
+                      <p>+55 85 3341-0002</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
 
-          <!-- <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
+          <div class="col-lg-12">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="col form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Menssagem" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+                </form>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
-            </form>
-          </div> -->
+            </div>
+          </div>
 
         </div>
 
