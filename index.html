@@ -157,7 +157,7 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bx bx-cube-alt"></i>
                   <h4>Propósito</h4>
-                  <p>Gerar valor positivo no mercado e transformar vidas para melhor.</p>
+                  <p>Gerar valor positivo no mercado e na vida das pessoas.</p>
                 </div>
               </div>
             </div><!-- End .content-->
@@ -581,27 +581,19 @@
           <div class="col-lg-12">
             <div class="row justify-content-center">
               <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form  role="form" class="php-email-form">
                   <div class="row">
                     <div class="col form-group">
                       <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
-                    </div>
-                    <div class="col form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
                     </div>
                   </div>
                   <div class="form-group">
                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Menssagem" required></textarea>
+                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Menssagem" required></textarea>
                   </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+                  <div class="text-center"><button type="submit" onclick="redirectWpp()">Enviar Mensagem</button></div>
                 </form>
               </div>
             </div>
@@ -681,7 +673,8 @@
         <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
         <a href="https://instagram.com/capitalizefinancascorporativas?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
         <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <a href="#" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/company/capitalize-financas-corporativas/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://bit.ly/AtendimentoCapitalize" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -699,7 +692,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+      function redirectWpp(){
+    if($('#name').val() !== '' && $('#subject').val() !== '' && $('#message').val() !== ''){
+      const text = `Olá! Eu vim do site e gostaria de mais informações sobre:\n Nome: ${$('#name').val()} \n Assunto: ${$('#subject').val()} \n Messagem: ${$('#message').val()}`;
+      window.location.href = `https://api.whatsapp.com/send?phone=5585996465139&text=${text}`
+    }
+  }
+  </script>
 </body>
 
 </html>
