@@ -497,7 +497,7 @@ section {
 
 .section-bg:before {
   content: "";
-  background: #1b1b1b;
+  background: #194153;
   position: absolute;
   bottom: 60px;
   top: 60px;
@@ -801,8 +801,8 @@ section {
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 6px;
-  background: #252525;
-  transition: 0.3s;
+  background: rgb(37 37 37 / 54%);
+  transition: 0.01s;
 }
 
 .services .icon-box:hover {
