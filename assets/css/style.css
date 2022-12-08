@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #163a49;
+  background: #DCB978;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,7 +51,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: rgb(37 37 37 / 86%);
   line-height: 0;
 }
 
@@ -114,7 +114,7 @@ h6 {
 --------------------------------------------------------------*/
 .get-started-btn {
   margin-left: 30px;
-  background: #163a49;
+  background: #DCB978;
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px;
@@ -126,7 +126,6 @@ h6 {
 }
 
 .get-started-btn:hover {
-  background: #111111;
   color: #fff;
 }
 
@@ -409,7 +408,7 @@ h6 {
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+ .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -423,8 +422,7 @@ h6 {
   background: #b59152;
   border: 2px solid #163a49;
 }
-
-#hero .btn-get-started:hover {
+ .btn-get-started:hover {
   background: transparent;
   border-color: #fff;
 }
@@ -481,7 +479,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #163a49;
+  background: #ffffff;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -801,17 +799,15 @@ section {
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 6px;
-  background: rgb(37 37 37 / 54%);
+  /* background: rgb(37 37 37 / 54%); */
+  background: #DCB978;
   transition: 0.01s;
 }
 
-.services .icon-box:hover {
-  background: #2b2b2b;
-}
 
 .services .icon-box i {
   float: left;
-  color: #e4c48d;
+  color: rgb(37 37 37 / 96%);
   font-size: 40px;
   line-height: 0;
 }
@@ -824,7 +820,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #fff;
+  color: rgb(37 37 37 / 96%);
   transition: 0.3s;
 }
 
@@ -840,6 +836,7 @@ section {
   margin-left: 70px;
   line-height: 24px;
   font-size: 14px;
+  color: rgb(37 37 37 / 86%);
 }
 
 /*--------------------------------------------------------------
@@ -1989,7 +1986,7 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: #111111;
+  background: #163a49;
 }
 
 #footer .footer-top {
@@ -2145,4 +2142,14 @@ section {
   background: #163a49;
   color: #fff;
   text-decoration: none;
+}
+
+.thumbnail-wrapper {
+  display:inline-block;
+  position:relative;
+}
+.thumbnail-wrapper a {
+  position:absolute;
+  bottom:20%;
+  left:12%;
 }
